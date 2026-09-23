@@ -19,6 +19,9 @@ categoriasUnicas = set(c["categoria"] for c in produtos)
 
 print(f"Categorias unicas: ", *("\n" + c for c in categoriasUnicas))
 
+# key=lambda p: p["preco"] diz ao min() para comparar os dicionários
+# pelo campo "preco", em vez de tentar comparar os dicionários inteiros
+# (o que geraria erro). Retorna o dicionário completo com o menor preço.
 maisBarato = min(produtos, key=lambda p : p["preco"])
 print(f"Produto mais barato: {maisBarato["nome"]}, R${maisBarato["preco"]:.2f}")
 
