@@ -9,7 +9,9 @@ pedidos = [
 menorValor = min(pedidos, key=lambda v:v["total"])
 
 print("menor pedido:", menorValor)
-print("Index:",pedidos.index(menorValor))
-print("Acessando pelo index: ", pedidos[1])
+
+posicao = pedidos.index(menorValor)
+print("Index:",posicao)
+print("Acessando pelo index: ", pedidos[posicao])
 
 

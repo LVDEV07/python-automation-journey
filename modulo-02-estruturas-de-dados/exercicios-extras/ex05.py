@@ -14,4 +14,4 @@ maisCaroParaMaisBarato = sorted(produtosInformatica, key=lambda p:p["preco"], re
 doisPrimeiros = maisCaroParaMaisBarato[:2]
 
 for i in doisPrimeiros:
-    print(f"Nome: {i["nome"]} Preco: {i["preco"]} \n")
+    print(f"Nome: {i['nome']} Preco: {i['preco']} \n")
